@@ -1,0 +1,181 @@
+2020-02-13 00:24:13,449 INFO app uWSGIWorker3Core0 : Processing default request
+2020-02-13 00:24:15,977 INFO app uWSGIWorker6Core0 : Processing default request
+2020-02-13 00:28:32,715 ERROR app uWSGIWorker5Core0 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 2241, in preprocess_request
+    rv = func()
+  File "./app.py", line 14, in log_request_info
+    app.logger.debug('Headers: %s', request.headers)
+NameError: global name 'request' is not defined
+2020-02-13 00:29:02,643 INFO app uWSGIWorker3Core0 : Processing default request
+2020-02-13 00:29:05,457 INFO app uWSGIWorker2Core0 : Processing default request
+2020-02-13 00:29:59,689 DEBUG app uWSGIWorker3Core0 : Headers: Referer: http://10.144.203.136/hello
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+Connection: keep-alive
+Dnt: 1
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 00:29:59,690 ERROR app uWSGIWorker3Core0 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/var/www/.local/lib/python2.7/site-packages/flask/app.py", line 2241, in preprocess_request
+    rv = func()
+  File "./app.py", line 15, in log_request_info
+    app.logger.debug('Body: %s', requst.get_data())
+NameError: global name 'requst' is not defined
+2020-02-13 00:30:28,285 DEBUG app uWSGIWorker3Core0 : Headers: Referer: http://10.144.203.136/hello
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+Connection: keep-alive
+Dnt: 1
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 00:30:28,287 DEBUG app uWSGIWorker3Core0 : Body: 
+2020-02-13 00:30:28,287 INFO app uWSGIWorker3Core0 : Processing default request
+2020-02-13 00:30:30,110 DEBUG app uWSGIWorker4Core0 : Headers: Referer: http://10.144.203.136/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+Connection: keep-alive
+Dnt: 1
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 00:30:30,112 DEBUG app uWSGIWorker4Core0 : Body: 
+2020-02-13 00:30:30,793 DEBUG app uWSGIWorker10Core0 : Headers: Referer: http://10.144.203.136/hello
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+Connection: keep-alive
+Dnt: 1
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 00:30:30,795 DEBUG app uWSGIWorker10Core0 : Body: 
+2020-02-13 00:30:30,795 INFO app uWSGIWorker10Core0 : Processing default request
+2020-02-13 00:31:26,795 DEBUG app uWSGIWorker9Core0 : Headers: Referer: http://10.144.203.136/hello
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+Connection: keep-alive
+Dnt: 1
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 00:31:26,805 DEBUG app uWSGIWorker9Core0 : Body: 
+2020-02-13 00:31:26,805 INFO app uWSGIWorker9Core0 : Processing default request
+2020-02-13 00:31:28,827 DEBUG app uWSGIWorker3Core0 : Headers: Referer: http://10.144.203.136/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+Connection: keep-alive
+Dnt: 1
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 00:31:28,827 DEBUG app uWSGIWorker3Core0 : Body: 
+2020-02-13 00:31:29,760 DEBUG app uWSGIWorker5Core0 : Headers: Referer: http://10.144.203.136/hello
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+Connection: keep-alive
+Dnt: 1
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 00:31:29,762 DEBUG app uWSGIWorker5Core0 : Body: 
+2020-02-13 00:31:29,762 INFO app uWSGIWorker5Core0 : Processing default request
+2020-02-13 19:10:36,852 DEBUG app uWSGIWorker10Core0 : Headers: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+Connection: keep-alive
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 19:10:36,853 DEBUG app uWSGIWorker10Core0 : Body: 
+2020-02-13 19:10:36,853 INFO app uWSGIWorker10Core0 : Processing default request
+2020-02-13 19:10:37,148 DEBUG app uWSGIWorker3Core0 : Headers: Referer: http://10.144.203.136/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+Connection: keep-alive
+Host: 10.144.203.136
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 19:10:37,148 DEBUG app uWSGIWorker3Core0 : Body: 
+2020-02-13 19:16:53,720 DEBUG app uWSGIWorker10Core0 : Headers: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+Connection: keep-alive
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 19:16:53,721 DEBUG app uWSGIWorker10Core0 : Body: 
+2020-02-13 19:16:53,721 INFO app uWSGIWorker10Core0 : Processing default request
+2020-02-13 19:16:55,148 DEBUG app uWSGIWorker3Core0 : Headers: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+Connection: keep-alive
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 19:16:55,148 DEBUG app uWSGIWorker3Core0 : Body: 
+2020-02-13 19:16:55,149 INFO app uWSGIWorker3Core0 : Processing default request
+2020-02-13 19:16:55,955 DEBUG app uWSGIWorker4Core0 : Headers: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36
+Connection: keep-alive
+Host: 10.144.203.136
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+
+
+2020-02-13 19:16:55,956 DEBUG app uWSGIWorker4Core0 : Body: 
+2020-02-13 19:16:55,956 INFO app uWSGIWorker4Core0 : Processing default request

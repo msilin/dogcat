@@ -1,0 +1,26 @@
+body {
+    background-color: powderblue; 
+}
+h1 {
+   display: flex;
+   justify-content: center;
+   color: darkblue;
+}
+p {
+  color: red;
+}
+.row {
+    /* border: 10px ridge #f00; */
+    /* background-color: white; */
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+img {
+    padding: .5rem;
+}
