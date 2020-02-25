@@ -19,11 +19,11 @@ def find_str(l, subs):
     return ""
 itemz = []
 
-with open('app.log') as f:
+with open('app3.log') as f:
    items = f.read().split("**********************************************")[1:]
    print (len(items))
    i = 0 
-   for s in items[:96000]:
+   for s in items:
           i+=1 
           if (i%1000 ==0 ):
              print("i " + str(i))
@@ -74,7 +74,7 @@ with open('app.log') as f:
 
 
 df = pd.DataFrame(itemz)
-df.to_csv('DF2.csv') 
+df.to_csv('DF2_new.csv') 
 
 
 df
